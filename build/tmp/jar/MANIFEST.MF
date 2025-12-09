@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Specification-Title: navidaddaymod
+Specification-Vendor: Cesar, Carlos
+Specification-Version: 1
+Implementation-Title: NavidadDay
+Implementation-Version: 1.0.0
+Implementation-Vendor: Cesar, Carlos
+Implementation-Timestamp: 2025-12-08T19:11:06-0600
+
