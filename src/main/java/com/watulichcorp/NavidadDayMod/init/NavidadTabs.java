@@ -8,10 +8,18 @@ import net.minecraftforge.fml.common.Mod;
 
 @Mod.EventBusSubscriber(modid = NavidadDayMod.MODID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class NavidadTabs {
+
     @SubscribeEvent
     public static void addItemsToTabs(BuildCreativeModeTabContentsEvent event) {
-        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(InitItems.BASTCARAMEL);
+
+        // Ingredientes
+        if (event.getTabKey().equals(CreativeModeTabs.INGREDIENTS)) {
+            event.accept(InitItems.BASTCARAMEL.get());   // CORREGIDO
+        }
+
+        // Huevos de spawneo
+        if (event.getTabKey().equals(CreativeModeTabs.SPAWN_EGGS)) {
+            event.accept(ModItems.DUENDE_SPAWN_EGG.get());   // CORREGIDO
         }
     }
 }
